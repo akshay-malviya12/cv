@@ -1,5 +1,50 @@
-<h2>
+<html>
+  <head><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+<body>
+    </head>
+    <!-- // Add New Song Section Start -->
+    <div class="col-md-12 col-12">
+      <div class="form-group" id="rec-status1">
+        <label for="" class="my-2 ps-4">Is1 there a master recording ?</label>
+        <select class="choices form-select rounded-pill ps-4" name="" id="is-master" onChange=" yesnoCheckForMaster(this)">
+          <option value="Yes">Yes</option>
+          <option value="No" selected>No</option>
+        </select>
+      </div>
+    </div>
+ <div id="containers_input" style="display:none">
+    <div class="col-md-6 col-12" id="master">
+      <div class="form-group" id="rec-status">
+        <label for="rec-status" class="my-2 ps-4">Is there a master recording ?</label>
+        <select class="choices form-select rounded-pill ps-4" id="is-master1"  ;>
+          <option value="Yes" selected>Yes</option>
+          <option value="No">No</option>
+        </select>
+      </div>
+    </div>
+    <div class="col-md-6 col-12" id="artist">
+      <div class="form-group">
+        <label for="artist-name" class="my-2 ps-4">Who is the artist ?</label>
+        <input type="text" id="artist-name" class="form-control rounded-pill ps-4" placeholder="Enter name here">
+      </div>
+    </div>
+</div>
+    <!-- // Add New Song Section End -->
 
-Hello i am Akshay
-  
-</h2>
+ <script>
+         function yesnoCheckForMaster(that) {
+	console.log("test",that)
+ 	alert(String(that.value).toLowerCase());
+	/*
+ 	if (that.value.toLowerCase() == "yes") {
+
+ 			document.getElementById("rec-status1").style.display = "block";
+ 	} else {
+ 		  document.getElementById("rec-status1").style.display = "none";
+ 	}
+	*/
+ }
+ </script>
+  </body>
+</html>
